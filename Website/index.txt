@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <style>
+       
+    </style>
+    <style>
+        .postContainer {
+            display: flex;
+            height:100%;
+            overflow:scroll;
+            flex-direction: column;
+        }
+        
+        .post {
+            margin: 10x;
+            background-color: peru;
+        }
+    </style>
+    <main>
+        <header>
+        <?php include('header.php'); ?>
+        </header>
+        <div class="container-fluid">
+            <div class="main">
+                
+                    <div class="sideNav">
+                        <div class="lendBorrow">
+                            <ul>
+                                <li>sell/lend</li>
+                                <li>My books</li>
+                            </ul>
+                        </div>
+                        <div class="filterPost">
+
+                        </div>
+                    </div>
+                
+                
+                    <div class="postContainer">
+                        <?php
+                        for($i=0;$i<10;$i++)
+                        {
+                            include ('post.html');
+                        }
+                        ?>
+                    </div>
+                
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
