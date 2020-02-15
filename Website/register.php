@@ -6,7 +6,7 @@ $fname=$_POST["name"];
 $email=$_POST["email"];
 $mobile=$_POST["phone_no"];
 $pass=$_POST["pass"];
-$cpass=$_POST["repass"];
+$cpass=$_POST["re_pass"];
 
 if (empty($fname) || empty($email) || empty($mobile) || empty($pass) || empty($cpass)) {
     header("Location: index.php?signup=empty");
