@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <title>BOOKBUD</title>
@@ -51,7 +54,16 @@
             </a>
             <!-- <img src="/w3images/avatar_g2.jpg" style="width:45%;" class="w3-round"><br><br> -->
             <!-- <h4><b>BookBud</b></h4> -->
-            <button class="w3-button w3-white" onclick="openSignupModal()"><h4><b>Login/SignUp</b></h4> </button>
+            <?php 
+                if(isset($_SESSION['name']))
+                {
+                    echo '<h4><b>'.$_SESSION['name'].'</b></h4>';
+                }
+                else{
+                    echo '<button class="w3-button w3-white" onclick="openSignupModal()"><h4><b>Login/SignUp</b></h4> </button>';
+                }
+            ?>
+            
 
         </div>
         <div class="w3-bar-block">
