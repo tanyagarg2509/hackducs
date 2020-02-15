@@ -268,7 +268,7 @@ h2 {
     background-color: rgba(0, 0, 0, 0.192);
     width: 100%;
     z-index: 20;
-    overflow: auto;
+    /* overflow: auto; */
     background: #f8f8f8;
 }
 
@@ -338,10 +338,6 @@ body {
     -ms-transform: translate(-50%, -50%);
 }
 
-.signup {
-    /* margin-bottom: 150px; */
-}
-
 .signup-content {
     padding: 75px 0;
 }
@@ -391,8 +387,13 @@ figure {
     background: #4292dc;
 }
 
-#signin {
-    margin-top: 16px;
+.signup {
+    display: none;
+}
+
+.sign-in {
+    margin-top: 5px;
+    display: none;
 }
 
 .signup-image-link {
