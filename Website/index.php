@@ -31,16 +31,18 @@
     
     #signupModal {
         display: none;
+        transition: 2s ease;
     }
 </style>
 
-<body class="w3-light-grey w3-content" style="max-width:1600px">
-
-    <div id="signupModal">
+<div id="signupModal">
         <?php 
             include('signupModal.html');
         ?>
     </div>
+<body class="w3-light-grey w3-content" id="bodymain" style="max-width:1600px">
+
+   
     <!-- Sidebar/menu -->
     <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:250px;" id="mySidebar"><br>
         <div class="w3-container">
@@ -172,8 +174,10 @@
         }
 
         function openSignupModal() {
+            
             document.getElementById('signupModal').style.display = 'block';
-            document.getElementById('signup').style.display = 'block';
+            document.getElementById('signupContainer').style.display = 'flex';
+           
         }
     </script>
 
