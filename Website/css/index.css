@@ -1,0 +1,70 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", sans-serif
+}
+
+.myimage {
+    height: 250px;
+}
+
+.mySocialIcons {
+    margin-top: 30px;
+}
+
+.mySocialIcons i {
+    padding: 5px;
+}
+
+#signupModal {
+    display: none;
+    transition: 2s ease;
+}
+
+.detailBuyButton {
+    margin: 20px 0px;
+    padding: 20px 0px;
+}
+
+.leftDetails {
+    float: left;
+    padding: 5px;
+    margin: 0px;
+    font-size: 15px;
+    width: 100px;
+    font-weight: bolder;
+}
+
+.rightDetails {
+    float: right;
+    padding: 5px;
+    margin: 0px;
+    width: 100px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.form-horizontal .control-label {
+    padding-top: 20px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.form-horizontal .radio-inline {
+    padding-top: 15px;
+    margin-left: 120px;
+    font-size: 20px;
+}
+
+.radio-inline input[type=radio] {
+    margin-top: 14px;
+    margin-left: 40px;
+}
+
+#sellBlock {
+    display: none;
+}
