@@ -1,9 +1,6 @@
 <?php
 
 session_start();
-
-// if (isset($_POST['signin']))
-//  {
 	include_once 'config.php';
 
 	$email= mysqli_real_escape_string($conn, $_POST['email']);
@@ -45,12 +42,4 @@ session_start();
 		}
 
 	}
-
-// }
-// else
-// {
-// 	header("Location:login.php?login=invalid access");
-// 	exit();
-// }
-
 ?>
