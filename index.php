@@ -1,6 +1,3 @@
-<?php 
-session_start();
-?>
 <!DOCTYPE html>
 <html>
 <title>BOOKBUD</title>
@@ -91,23 +88,13 @@ session_start();
             </a>
             <!-- <img src="/w3images/avatar_g2.jpg" style="width:45%;" class="w3-round"><br><br> -->
             <!-- <h4><b>BookBud</b></h4> -->
-            <?php 
-                if(isset($_SESSION['name']))
-                {
-                    echo '<h4><b>Hello, '.$_SESSION['name'].'</b></h4>';
-                }
-                else{
-                    echo '<button class="w3-button w3-white" onclick="openSignupModal()"><h4><b>Login/SignUp</b></h4> </button>';
-                }
-            ?>
-            
+            <button class="w3-button w3-white" onclick="openSignupModal()"><h4><b>Login/SignUp</b></h4> </button>
 
         </div>
         <div class="w3-bar-block">
             <a href="#home" onclick="openHomeBlock()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-home fa-fw w3-margin-right"></i>HOME</a>
             <a href="#" onclick="openSellBlock()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-book fa-fw w3-margin-right"></i>SELL/RENT</a>
             <a href="#about" onclick="" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT US</a>
-            <a href="logout.php" onclick="" class="w3-bar-item w3-button w3-padding"><i class="fa fa-sign-out fa-fw w3-margin-right"></i>LOGOUT</a>
         </div>
         <div class="w3-panel w3-large mySocialIcons">
             <i class="fa fa-facebook-official w3-hover-opacity"></i>
